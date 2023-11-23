@@ -1,12 +1,12 @@
 ﻿using Blackbird.Applications.Sdk.Common;
 
-namespace Apps.App;
+namespace Apps.AmazonRedshift;
 
-public class Application : IApplication
+public class AmazonRedshiftApplication : IApplication
 {
     public string Name
     {
-        get => "App";
+        get => "Amazon Redshift";
         set { }
     }
 
