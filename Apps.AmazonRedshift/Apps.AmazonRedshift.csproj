@@ -12,16 +12,14 @@
 
     <ItemGroup>
         <PackageReference Include="AWSSDK.Redshift" Version="3.7.302.2" />
+        <PackageReference Include="AWSSDK.RedshiftDataAPIService" Version="3.7.300.7" />
+        <PackageReference Include="AWSSDK.RedshiftServerless" Version="3.7.301.2" />
         <PackageReference Include="Blackbird.Applications.Sdk.Common" Version="2.2.0-alpha3"/>
         <PackageReference Include="Blackbird.Applications.Sdk.Utils" Version="1.0.12"/>
     </ItemGroup>
 
     <ItemGroup>
         <EmbeddedResource CopyToOutputDirectory="Always" Include="image\icon.png"/>
-    </ItemGroup>
-
-    <ItemGroup>
-      <Folder Include="Actions\" />
     </ItemGroup>
 
 </Project>

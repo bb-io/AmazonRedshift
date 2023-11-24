@@ -17,6 +17,7 @@ public class ConnectionDefinition : IConnectionDefinition
             {
                 new(CredsNames.AccessKey) { DisplayName = "Access key" },
                 new(CredsNames.AccessSecret) { DisplayName = "Access secret", Sensitive = true },
+                new(CredsNames.Region) { DisplayName = "Region" },
             }
         }
     };

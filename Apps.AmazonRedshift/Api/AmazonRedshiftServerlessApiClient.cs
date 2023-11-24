@@ -1,5 +1,5 @@
 using Amazon;
-using Amazon.Redshift;
+using Amazon.RedshiftServerless;
 using Amazon.Runtime;
 using Apps.AmazonRedshift.Constants;
 using Blackbird.Applications.Sdk.Common.Authentication;
@@ -7,9 +7,9 @@ using Blackbird.Applications.Sdk.Utils.Extensions.Sdk;
 
 namespace Apps.AmazonRedshift.Api;
 
-public class AmazonRedshiftApiClient : AmazonRedshiftClient
+public class AmazonRedshiftServerlessApiClient : AmazonRedshiftServerlessClient
 {
-    public AmazonRedshiftApiClient(AuthenticationCredentialsProvider[] creds) : base(GetAwsCreds(creds), new AmazonRedshiftConfig()
+    public AmazonRedshiftServerlessApiClient(AuthenticationCredentialsProvider[] creds) : base(GetAwsCreds(creds), new AmazonRedshiftServerlessConfig()
     {
         RegionEndpoint = RegionEndpoint.GetBySystemName(creds.Get(CredsNames.Region).Value),
     })
