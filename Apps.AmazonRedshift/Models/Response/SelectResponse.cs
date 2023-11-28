@@ -4,11 +4,15 @@ namespace Apps.AmazonRedshift.Models.Response;
 
 public class SelectResponse
 {
-    public IEnumerable<RowResponse> Rows { get; set; }
+    public IEnumerable<RowResponse>? Rows { get; set; }
 
-    public SelectResponse(GetStatementResultResponse response)
+    public SelectResponse()
     {
-        Rows = response.Records.Select(x => new RowResponse()
+    }
+
+    public SelectResponse(GetStatementResultResponse? response)
+    {
+        Rows = response?.Records.Select(x => new RowResponse()
         {
             Values = x.Select((y, ind) =>
             {
