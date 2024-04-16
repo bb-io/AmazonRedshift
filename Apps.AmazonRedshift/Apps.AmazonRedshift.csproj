@@ -6,7 +6,7 @@
         <Nullable>enable</Nullable>
         <Product>Amazon Redshift</Product>
         <Description>Cloud data warehouse for data analysis</Description>
-        <Version>1.0.0</Version>
+        <Version>1.0.1</Version>
         <AssemblyName>Apps.AmazonRedshift</AssemblyName>
     </PropertyGroup>
 
