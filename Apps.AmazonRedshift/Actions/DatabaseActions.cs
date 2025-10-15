@@ -9,7 +9,7 @@ using Blackbird.Applications.Sdk.Common.Invocation;
 
 namespace Apps.AmazonRedshift.Actions;
 
-[ActionList]
+[ActionList("Database entries")]
 public class DatabaseActions : AmazonRedshiftInvocable
 {
     public DatabaseActions(InvocationContext invocationContext) : base(invocationContext)
