@@ -6,7 +6,7 @@
         <Nullable>enable</Nullable>
         <Product>Amazon Redshift</Product>
         <Description>Cloud data warehouse for data analysis</Description>
-        <Version>1.0.2</Version>
+        <Version>1.0.3</Version>
         <AssemblyName>Apps.AmazonRedshift</AssemblyName>
     </PropertyGroup>
 
@@ -22,4 +22,7 @@
         <EmbeddedResource CopyToOutputDirectory="Always" Include="image\icon.png" />
     </ItemGroup>
 
+    <ItemGroup>
+        <EmbeddedResource Include="..\README.md" Link="README.md" CopyToOutputDirectory="Always" />
+    </ItemGroup>
 </Project>
